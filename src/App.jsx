@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import ButtonAppBar from './components/ButtonAppBar'
+import React from "react";
+import Dashboard from "./components/Dashboard";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <ButtonAppBar></ButtonAppBar>
+      <div className="App">
+        <Dashboard />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
